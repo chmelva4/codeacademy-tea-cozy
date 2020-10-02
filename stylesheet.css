@@ -3,42 +3,72 @@ html {
     font-size: 22px;
     color: seashell;
     background-color: black;
-    vertical-align: center;
+    /* vertical-align: center; */
 }
 
-body {
-}
-
-div li {
-    border: yellow solid 2px;
+* {
+    box-sizing: border-box;
 }
 
 nav {
     height: 69px;
-    border: white solid 1px;
+    border-bottom: seashell solid 1px;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    box-sizing: border-box;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: black;
+    margin: 0;
+}
+
+#logo {
+    height: 50px;
+    margin-left: 10px;
+    opacity: 0.9;
+    display: inline-block;
+} 
+   
+.menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.spring {
+    flex-grow: 10;
+}
+
+main {
+    position: relative;
+    top: 69px;
+    margin:0;
 }
 
 .nav-item {
     opacity: 0.9;
     text-decoration: underline;
-    margin: 10px, 50px;
     display: inline-block;
-    float: right;
 }
 
 .jumbotron {
     width: 1200px;
     height: 700px;
     background-image: url("./img/img-mission-background.jpg");
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* display: inline-block; */
-    border: yellow solid 2px;
+    /* border: yellow solid 2px; */
 }
 
 .jumbotron h2, .jumbotron h4, h2, h4 {
@@ -74,4 +104,8 @@ nav {
 .img-center {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.vcenter {
+    background-color: black;
 }

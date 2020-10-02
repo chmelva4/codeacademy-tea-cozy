@@ -10,7 +10,7 @@ body {
 }
 
 div li {
-    border: white solid 1px;
+    border: yellow solid 2px;
 }
 
 nav {
@@ -27,4 +27,51 @@ nav {
     margin: 10px, 50px;
     display: inline-block;
     float: right;
+}
+
+.jumbotron {
+    width: 1200px;
+    height: 700px;
+    background-image: url("./img/img-mission-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /* display: inline-block; */
+    border: yellow solid 2px;
+}
+
+.jumbotron h2, .jumbotron h4, h2, h4 {
+    opacity: 0.9;
+    text-transform: capitalize;
+    /* border: red 3px solid; */
+    background-color: black;
+    text-align: center;
+} 
+
+#tea-of-the-month {
+    width:1000px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card img {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.card h4 {
+    margin-top:10px;
+}
+.img-center {
+    margin-left: 50px;
+    margin-right: 50px;
 }

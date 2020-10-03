@@ -71,10 +71,10 @@ main {
     /* border: yellow solid 2px; */
 }
 
-.jumbotron h2, .jumbotron h4, h2, h4 {
+h2, h3, h4, h5, .location p {
     opacity: 0.9;
+    color: seashell;
     text-transform: capitalize;
-    /* border: red 3px solid; */
     background-color: black;
     text-align: center;
 } 
@@ -106,6 +106,51 @@ main {
     margin-right: 50px;
 }
 
-.vcenter {
+.black {
     background-color: black;
+}
+
+#location-container {
+    height:500px;
+    /* width:1200px; */
+    background-image: url("./img/img-locations-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-container h2 {
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.location-row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    background-color: black;
+    margin-right: 40px;
+    width: 300px;
+}
+
+footer h5 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+#email {
+    text-transform: none;
+}
+
+#contact {
+    height: 200px;
+    display: block;
 }
